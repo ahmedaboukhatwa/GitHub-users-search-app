@@ -31,9 +31,9 @@ async function getUser(inputValue) {
     </header>
 
     <aside>
-      <div><span>user </span><br><h4>${data.public_repos}</h4></div>
-      <div><span>followers</span><br><h4>${data.followers}</h4></div>
-      <div><span>following </span><br><h4>${data.following}</h4></div>
+      <div><span>Repos</span><br><h4>${data.public_repos}</h4></div>
+      <div><span>Followers</span><br><h4>${data.followers}</h4></div>
+      <div><span>Following </span><br><h4>${data.following}</h4></div>
     </aside>
 
     <footer>
