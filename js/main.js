@@ -2,7 +2,6 @@
 let input = document.querySelector(".get-user input");
 let getButton = document.querySelector(".get-button");
 let showData = document.querySelector(".show-data");
-
 getButton.addEventListener("click", function () {
   if (input.value !== "") {
     getUser(input.value);
