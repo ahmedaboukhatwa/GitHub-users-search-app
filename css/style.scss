@@ -1,0 +1,115 @@
+$Blue:rgba(4, 121, 247, 255);
+$DarkBlue: #141c2ffe;
+$DarkGrey: #c9c5c4;
+$LightGrey: #f5f1f0;
+$mainColor:#28395e;
+@mixin main{
+    padding:10px 8px 10px 30px;
+    display: flex;
+    border-radius: 10px;
+    margin:auto;
+    width: 52vw;
+    background-color: $mainColor;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma,arial;
+    background-color: $DarkBlue;
+}
+.repos-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .get-repos{
+        @include main;
+        i{
+            color: $Blue;
+            margin: auto;
+            font-size: x-large;
+        }
+        input{
+            background-color: #28395e;
+            outline: none;
+            color: $LightGrey;
+            width: 100%;
+            padding: 15px 20px;
+            border:none;
+            font-size: 20px;
+            height: 54px;
+            &::placeholder{
+                color: $LightGrey;
+                opacity: 1;
+            }
+        }
+        .get-button{
+            background-color: $Blue;
+            color: $LightGrey;
+            border: none;
+            font-weight: bold;
+            height: 54px;
+            width: 140px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 54px;
+            border-radius: 10px;
+        }
+    }
+    .show-data{
+        color: $LightGrey;
+        padding:20px;
+        margin:auto;
+        display: flex;
+        width: 52vw;
+        background-color: $LightGrey;
+        @include main;
+        .pic{
+            margin-right: 10px;
+            img{
+                border-radius: 50%;
+                width: 150px;
+            }
+        }
+        .information{
+          color: $LightGrey;
+          width: 75%;
+          padding: 10px;
+          margin-top: 10px;
+          header{
+              h2{display:inline;}
+              .span-joined{float: right;}
+              p{}
+          }
+          aside{
+              background-color: $DarkBlue;
+              padding:10px ;
+              border-radius: 10px;
+              div{
+                  display: inline-block;
+                  width: 32%;
+                span{                   
+                    font-size: x-large;
+                }
+                h4{display: contents;}
+              }
+              
+          }
+          footer{
+              padding:10px;
+              display: flex;
+              span{
+                  font-size: larger;
+                  width: 50%;
+                  i{
+                    margin-right: 8px;
+                  }
+                  a{
+                      text-decoration: none;
+                      color: $LightGrey;
+                  }
+              }
+          }
+        }
+    }
+}
