@@ -1,5 +1,5 @@
 // // main variable
-let input = document.querySelector(".get-repos input");
+let input = document.querySelector(".get-user input");
 let getButton = document.querySelector(".get-button");
 let showData = document.querySelector(".show-data");
 
@@ -31,7 +31,7 @@ async function getUser(inputValue) {
     </header>
 
     <aside>
-      <div><span>repos </span><br><h4>${data.public_repos}</h4></div>
+      <div><span>user </span><br><h4>${data.public_repos}</h4></div>
       <div><span>followers</span><br><h4>${data.followers}</h4></div>
       <div><span>following </span><br><h4>${data.following}</h4></div>
     </aside>

@@ -18,11 +18,11 @@ body{
     font-family: Tahoma,arial;
     background-color: $DarkBlue;
 }
-.repos-container{
+.user-container{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    .get-repos{
+    .get-user{
         @include main;
         i{
             color: $Blue;
